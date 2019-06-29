@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<succezci-datapackage version="1.0.13">
+	<head>
+		<modelversion>TODO</modelversion>
+		<dataperiod>201803</dataperiod>
+		<datahierarchies>110000</datahierarchies>
+		<forms>FORM,FORM1</forms>
+	</head>
+	<hierarchy id="110000">
+		<models>
+			<table name="FORM_F0" grain="DATESTART,DATEEND,DIM_XZQH_FZ,BH">
+				<field name="DATESTART" type="C" len="12"/>
+				<field name="DATEEND" type="C" len="12"/>
+				<field name="DIM_XZQH_FZ" type="C" len="50"/>
+				<field name="BH" type="C" len="50"/>
+				<field name="XM" type="C" len="50"/>
+			</table>
+			<table name="FORM1_F0" grain="DATESTART,DATEEND,DIM_XZQH_FZ,KM">
+				<field name="DATESTART" type="C" len="12"/>
+				<field name="DATEEND" type="C" len="12"/>
+				<field name="DIM_XZQH_FZ" type="C" len="50"/>
+				<field name="KM" type="C" len="50"/>
+				<field name="CJ" type="C" len="50"/>
+			</table>
+		</models>
+		<data>
+			<table name="FORM_F0">
+				<row>201803,,110000,1,8888</row>
+				<row>201803,,110000,5,555</row>
+				<row>201804,,110000,2,233</row>
+				<row>201803,,110000,9,999</row>
+			</table>
+			<table name="FORM1_F0">
+				<row>201803,,110000,e,eee</row>
+				<row>201803,,110000,b,bbb</row>
+			</table>
+		</data>
+	</hierarchy>
+</succezci-datapackage>

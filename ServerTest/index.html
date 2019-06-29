@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Succez文件管理系统</title>
+<script type="text/javascript">
+	var jsondata = {
+		    "filelist": [
+		        { "filetype": "file", "filename": ".classpath", "filesize": "487999999999", "filetime": "1510644889558" },
+		        { "filetype": "dir", "filetime": "1510734997499", "filename": ".git" },
+		        { "filetype": "file", "filename": ".gitignore", "filesize": "6555555555", "filetime": "1510045175436" },
+		        { "filetype": "file", "filename": ".project", "filesize": "37055", "filetime": "1509939492578" },
+		        { "filetype": "dir", "filetime": "1509939492587", "filename": ".settings" },
+		        { "filetype": "dir", "filetime": "1510794539709", "filename": "bin" },
+		        { "filetype": "file", "filename": "index.html", "filesize": "544444445", "filetime": "1510707927756" },
+		        { "filetype": "dir", "filetime": "1510735946392", "filename": "js" },
+		        { "filetype": "dir", "filetime": "1510559328517", "filename": "lib" },
+		        { "filetype": "dir", "filetime": "1510794645061", "filename": "src" }
+		    ]
+		};
+		for (var i = 0, len = jsondata.filelist.length; i < len; i++) {
+		    document.write(jsondata.filelist[i].filename);
+		    document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+		    if (jsondata.filelist[i].filetype == "dir")
+		        document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+		    else {
+		        var size = parseInt(jsondata.filelist[i].filesize);
+		        document.write(bytesToSize(size));
+		        document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+		    }
+		    var date = new Date();
+		    date.setTime(jsondata.filelist[i].filetime);
+		    document.write(date.toLocaleDateString() + date.toLocaleTimeString());
+		    document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+		    document.write(jsondata.filelist[i].filetype);
+		    document.write("</br>");
+		}
+		function bytesToSize(bytes) {
+		    if (bytes === 0) return '0 B';
+		    var k = 1000, // or 1024
+		        sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
+		        i = Math.floor(Math.log(bytes) / Math.log(k));
+		    return (bytes / Math.pow(k, i)).toPrecision(3)+ sizes[i];
+		}
+	</script>
+</head>
+<body>
+	<p>
+                名称: <span id="filename"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                大小：<span id="filesize"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                日期: <span id="filetime"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p> 
+</body>
+	
+</html>

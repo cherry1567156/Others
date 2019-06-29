@@ -1,0 +1,14 @@
+2017-11-10 13:53:42 [main:0] - [ERROR] [Log4jTest:28] [file2buf] FileToBuf测试-->文件不可读
+2017-11-10 13:53:42 [main:2] - [ERROR] [Log4jTest:28] [file2buf] FileToBuf测试-->文件不可读
+2017-11-10 13:53:42 [main:2] - [ERROR] [Log4jTest:23] [file2buf] FileToBuf测试-->文件为空
+2017-11-10 13:57:18 [main:0] - [ERROR] [Log4jTest:28] [file2buf] FileToBuf测试-->文件不可读
+2017-11-10 13:57:18 [main:3] - [ERROR] [Log4jTest:28] [file2buf] FileToBuf测试-->文件不可读
+2017-11-10 13:57:18 [main:3] - [ERROR] [Log4jTest:23] [file2buf] FileToBuf测试-->文件为空
+2017-11-10 13:57:36 [main:0] - [ERROR] [Log4jTest:66] [treeLevel] 二叉树测试-->level输入有误:level超出树的范围
+2017-11-10 13:57:36 [main:2] - [ERROR] [Log4jTest:66] [treeLevel] 二叉树测试-->level输入有误:level超出树的范围
+2017-11-10 13:57:36 [main:5] - [ERROR] [Log4jTest:66] [treeLevel] 二叉树测试-->level输入有误:level超出树的范围
+2017-11-10 13:57:36 [main:6] - [ERROR] [Log4jTest:60] [treeLevel] 二叉树测试-->空树
+2017-11-10 13:57:36 [main:6] - [ERROR] [Log4jTest:60] [treeLevel] 二叉树测试-->空树
+2017-11-10 13:57:36 [main:6] - [ERROR] [Log4jTest:60] [treeLevel] 二叉树测试-->空树
+2017-11-10 13:57:36 [main:6] - [ERROR] [Log4jTest:60] [treeLevel] 二叉树测试-->空树
+2017-11-10 13:57:36 [main:7] - [ERROR] [Log4jTest:60] [treeLevel] 二叉树测试-->空树
